@@ -9,9 +9,7 @@ def ask_choice():
 
 def is_secured(wifi):
     wifi = wifi.split(":")[1]
-    if wifi == "":
-        return False
-    return True
+    return wifi != ""
 
 def connect_wifi(wifi, secured):
     wifi = wifi.split(":")[0]
